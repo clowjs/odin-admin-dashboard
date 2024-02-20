@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+ion-icon {
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: #1992d4;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff
+}
+
+a > h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  background-color: #e2e8f0;
+  padding: .5rem 1rem;
+  border-radius: 40px;
+  width: 500px;
+  border: none;
+  outline: none;
+
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 185px auto;
+}
+
+.sidebar {
+  padding: 22px;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.header {
+  padding: 22px;
+  grid-column: 2 / -1;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.content {
+  position: relative;
+  padding: 22px;
+
+  grid-column: 2 / -1;
+
+  background-color: #e2e8f0;
+
+  display: grid;
+  grid-template-columns: auto 275px;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 380px);
+  gap: 25px;
+}
+
+.icon-user {
+  font-size: 2.5rem;
+}
+
+.icon-greeting {
+  font-size: 4rem;
+}
+
+.content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+}
+
+.nav-top, .nav-bottom {
+  display: grid;
+  gap: 25px;
+}
+
+.nav-top > a, .nav-bottom > a {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.logo-image {
+  width: 2.25rem;
+  height: 2.25rem;
+
+  display: grid;
+  gap: .25rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  > div {
+    background-color: #FFF;
+  }
+}
+
+.image-item-1 {
+  grid-row: 1 / 6;
+}
+
+.image-item-2 {
+  grid-row: 1 / 4;
+}
+
+.image-item-3 {
+  grid-row: 6 / -1;
+}
+
+.image-item-4 {
+  grid-row: -6 / -1;
+}
